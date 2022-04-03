@@ -1,0 +1,683 @@
+$color-morado: #872FA8;
+$color-verde: #BDDB4F;
+$color-blanco: #F8F9F7;
+$color-negro: #121212;
+
+
+* {
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-morado;
+}
+
+.color-black {
+    color: $color-negro !important;
+}
+
+.color-white {
+    color: $color-blanco !important;
+}
+
+.color-green {
+    color: $color-verde !important;
+}
+.bg-green{
+    background: $color-verde !important;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.fondo-pago {
+    background-image: url(../img/5586324.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.border-n {
+    border: none !important;
+}
+
+.btn-amazon {
+    background: $color-negro;
+}
+
+.contain-btn {
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    // background: chartreuse;
+
+
+    .btn-gral {
+        padding: 20px 30px;
+        width: 250px;
+        text-align: center;
+        background: #872FA8;
+        text-decoration: none;
+        color: $color-blanco;
+        transition: .1s ease-in;
+        -webkit-transition: .1s ease-in;
+        -o-transition: .1s ease-in;
+        border-radius: 8px;
+
+        &:hover {
+            background: $color-negro;
+            box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
+            color: $color-blanco;
+            transition: .1s ease-in;
+            -webkit-transition: .1s ease-in;
+            -o-transition: .1s ease-in;
+        }
+    }
+}
+
+.contain-btn-kits {
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: chartreuse;
+
+
+    .btn-kits {
+        padding: 20px 30px;
+        width: 250px;
+        text-align: center;
+        background: #872FA8;
+        text-decoration: none;
+        color: $color-blanco;
+        transition: .1s ease-in;
+        -webkit-transition: .1s ease-in;
+        -o-transition: .1s ease-in;
+        border-radius: 8px;
+
+        &:hover {
+            background: $color-negro;
+            box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
+            color: $color-blanco;
+            transition: .1s ease-in;
+            -webkit-transition: .1s ease-in;
+            -o-transition: .1s ease-in;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .contain-btn {
+        justify-content: center !important;
+
+    }
+}
+
+.up {
+    position: fixed;
+    left: 92%;
+    top: 80%;
+
+    i {
+        font-size: 3.5rem;
+    }
+}
+
+main {
+
+    header {
+        .menu-bar-pc {
+            // background: $color-blanco;
+            width: 100%;
+            position: absolute;
+            z-index: 99;
+            top: 0;
+            padding: 0 2.25rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 5.875rem;
+            position: fixed;
+            transition: .3s ease-in;
+            -webkit-transition: .3s ease-in;
+            -o-transition: .3s ease-in;
+            // border-bottom: 1px solid #d1d1d1;
+
+            // .logo {
+            //     width: 100px!important;
+            // }
+
+            .menu-principal {
+                list-style: none;
+
+                li {
+                    .item-menu {
+                        display: inline-block;
+                        position: relative;
+                    }
+
+                    .item-menu:after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $color-verde;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                    }
+
+                    .item-menu:hover:after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+
+                a {
+                    padding: 0 0.5625rem;
+                    text-decoration: none;
+                    color: $color-morado;
+                }
+            }
+
+            .top-redes {
+                a {
+                    padding: 0 0.5625rem;
+                    text-decoration: none;
+
+                    i {
+                        color: $color-negro;
+                        font-size: 1.65rem;
+                    }
+                }
+            }
+
+
+        }
+
+        .menu-bar-movil {
+
+            background: $color-blanco;
+            width: 100%;
+            position: fixed;
+            z-index: 99;
+            top: 0;
+            padding: 0 2.25rem;
+            display: none;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 5.875rem;
+            border-bottom: 1px solid $color-blanco;
+        }
+
+        // .logo {
+        //     max-width: 3.125rem;
+        // }
+
+        .burger-menu {
+            cursor: pointer;
+            font-size: 2.1875rem;
+
+        }
+
+        .slideMenu {
+            position: fixed;
+            top: 5.875rem;
+            left: -80%;
+            background: $color-blanco;
+            text-align: center;
+            padding: 1.25rem 2.25rem;
+            width: 80%;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+            height: 100%;
+
+            &.active {
+                left: 0;
+            }
+
+            .top-redes {
+                margin-bottom: 0.625rem;
+
+                a {
+                    padding: 0 0.5625rem;
+                    text-decoration: none;
+                    color: $color-negro;
+                }
+            }
+
+            .menu-principal {
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    padding: 0.625rem 0;
+                    border-top: 1px solid #d1d1d1;
+                    color: #872FA8;
+                }
+            }
+        }
+    }
+
+    // max-width: 1400px;
+    width: 100%;
+
+    .portada {
+        background: #BDDB4F;
+        width: 100%;
+        height: 100vh;
+        // opacity: .1; 
+        // position: relative;
+        z-index: 1;
+        background-image: url(../img/naturea-portada-kit.jpg);
+        background-position: center;
+        background-size: cover;
+
+        .texto-portada {
+            position: absolute;
+            top: 50%;
+            left: 13%;
+            transform: translate(0, -40%);
+            width: 40%;
+
+            .sub-title {
+                color: $color-negro;
+            }
+
+            h1 {
+                font-weight: 700;
+            }
+        }
+
+
+
+    }
+
+    @media (max-width:500px) {
+        .texto-portada {
+            width: 100% !important;
+            text-align: center;
+            left: 0 !important;
+            margin: 0 auto;
+        }
+
+        header {
+            .menu-bar-pc {
+                display: none;
+            }
+
+            .menu-bar-movil {
+                display: flex;
+            }
+        }
+    }
+
+    .contadores_principal {
+        // background: #ebebeb;
+        display: flex;
+        justify-content: center;
+
+        .contador {
+            text-align: center;
+
+            .contador_cantidad {
+                font-weight: 600;
+                color: $color-morado;
+            }
+
+            h4 {
+                color: $color-negro;
+            }
+        }
+    }
+
+    // .runners {
+    //     background: $color-blanco;
+    //     height: auto;
+    //     padding: 30px 0;
+    //     align-items: center;
+    //     display: flex;
+
+    //     div {
+    //         p {
+    //             font-weight: 700;
+    //             color: $color-negro
+    //         }
+    //     }
+    // }
+
+
+    .why-natureakits {
+
+        .card {
+            .card-img {
+                img {
+                    width: auto;
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+
+
+    .back-flower {
+
+        height: 380px;
+        align-items: center;
+        display: flex;
+        background-image: url(../img/aceites-esenciales.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .title-kits {
+            h2 {
+                font-weight: 400;
+                color: $color-morado;
+            }
+        }
+    }
+
+}
+
+@keyframes aparecer {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.ocultar {
+    opacity: 0;
+}
+
+.animar {
+    animation: aparecer 1.3s;
+}
+
+// FORMULARIO
+.formulario {
+    background-image: url(../img/fondoNaturea.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+
+
+.formulario-contacto ::before,
+.formulario-contacto ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.formulario-contacto .formulario {
+    animation-name: moverIzquierda;
+    animation-duration: .5s
+}
+
+.formulario-contacto h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #549537
+}
+
+.formulario-contacto form {
+    background: #fff;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, .8)
+}
+
+.formulario-contacto .form {
+    width: 100%;
+    margin: auto
+}
+
+.formulario-contacto form .grupo {
+    position: relative;
+    margin: 45px
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    background: rgba(84, 149, 55, .2);
+    border-radius: 5px;
+    color: #549537;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: 0;
+    color: #549537
+}
+
+.formulario-contacto input:focus~label,
+.formulario-contacto input:valid~label,
+.formulario-contacto textarea:focus~label,
+.formulario-contacto textarea:valid~label {
+    position: absolute;
+    top: -18px;
+    font-size: 12px;
+    color: #549537
+}
+
+.formulario-contacto label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: .5s ease all;
+    pointer-events: none
+}
+
+.formulario-contacto input:focus~.barra::before,
+.formulario-contacto textarea:focus~.barra::before {
+    width: 100%
+}
+
+.formulario-contacto .barra {
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.formulario-contacto .barra::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #549537, #123800);
+    transition: .3s ease all;
+    left: 0;
+}
+
+.formulario-contacto button {
+    background: #549537;
+    background: -webkit-linear-gradient(to right, #549537, #123800);
+    background: linear-gradient(to right, #549537, #123800);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer
+}
+
+.prov_top {
+    transition: .2s ease-in
+}
+
+.prov_top:hover {
+    margin-top: -10px;
+    transition: .2s ease-in
+}
+
+form .formulario-card {
+    padding: 20px;
+    height: 100%;
+    border: 1px solid #bababa;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+form .formulario-card .btn-group-lg>.btn,
+form .formulario-card .btn-lg {
+    width: 100%;
+    border: 0
+}
+
+@media all and (max-width: 920px) {
+    .productos .top-producto {
+        margin-top: -5rem !important
+    }
+}
+
+@media all and (max-width: 670px) {
+    .logo img {
+        display: none !important
+    }
+
+    nav .barra-1 .cont-us .sesion-registro {
+        display: none !important
+    }
+}
+
+@media all and (max-width: 450px) {
+    nav .barra-2 .sub-menu {
+        flex-wrap: nowrap;
+        overflow-x: scroll
+    }
+
+    nav .barra-2 .sub-menu li:nth-child(1) {
+        margin-left: 60px
+    }
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+
+
+.formulario__grupo-incorrecto {
+    color: #d10000 !important;
+}
+
+.img-hover:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+}
+
+.img-hover {
+    // transition: .2s ease-in;
+    // -webkit-transition: .2s ease-in;
+    // -o-transition: .2s ease-in;
+    animation: card 2s infinite;
+}
+
+
+@keyframes card {
+    0% {
+        // transform: scale(1);
+        transform: rotate(0deg)
+    }
+
+    20% {
+        // transform: scale(1.05);
+        transform: rotate(3deg)
+    }
+
+    40% {
+        // transform: scale(1);
+        transform: rotate(-3deg)
+    }
+
+    60% {
+
+        transform: rotate(0deg)
+    }
+
+    80% {
+
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+
+.sticky {
+//   height: 70px;
+
+  .list-menu .list li .item-menu {
+    color: $color-blanco !important;
+    transition: .6s ease-in;
+  }
+.menu-bar-pc{
+    background-color:$color-verde;
+    // top: 0!important;
+    margin-top: 0!important;
+    transition: .3s ease-in;
+    -webkit-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+}
+  .logo img {
+    width: 70%;
+  }
+
+  .burger-menu {
+    color: $color-blanco !important;
+    transition: .6s ease-in;
+  }
+}

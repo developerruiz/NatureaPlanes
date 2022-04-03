@@ -1,0 +1,694 @@
+* {
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #872FA8;
+}
+
+.color-black {
+  color: #121212 !important;
+}
+
+.color-white {
+  color: #F8F9F7 !important;
+}
+
+.color-green {
+  color: #BDDB4F !important;
+}
+
+.bg-green {
+  background: #BDDB4F !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.fondo-pago {
+  background-image: url(../img/5586324.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.border-n {
+  border: none !important;
+}
+
+.btn-amazon {
+  background: #121212;
+}
+
+.contain-btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.contain-btn .btn-gral {
+  padding: 20px 30px;
+  width: 250px;
+  text-align: center;
+  background: #872FA8;
+  text-decoration: none;
+  color: #F8F9F7;
+  transition: .1s ease-in;
+  -webkit-transition: .1s ease-in;
+  -o-transition: .1s ease-in;
+  border-radius: 8px;
+}
+
+.contain-btn .btn-gral:hover {
+  background: #121212;
+  -webkit-box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
+  color: #F8F9F7;
+  transition: .1s ease-in;
+  -webkit-transition: .1s ease-in;
+  -o-transition: .1s ease-in;
+}
+
+.contain-btn-kits {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contain-btn-kits .btn-kits {
+  padding: 20px 30px;
+  width: 250px;
+  text-align: center;
+  background: #872FA8;
+  text-decoration: none;
+  color: #F8F9F7;
+  transition: .1s ease-in;
+  -webkit-transition: .1s ease-in;
+  -o-transition: .1s ease-in;
+  border-radius: 8px;
+}
+
+.contain-btn-kits .btn-kits:hover {
+  background: #121212;
+  -webkit-box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
+  color: #F8F9F7;
+  transition: .1s ease-in;
+  -webkit-transition: .1s ease-in;
+  -o-transition: .1s ease-in;
+}
+
+@media (max-width: 500px) {
+  .contain-btn {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+.up {
+  position: fixed;
+  left: 92%;
+  top: 80%;
+}
+
+.up i {
+  font-size: 3.5rem;
+}
+
+main {
+  width: 100%;
+}
+
+main header .menu-bar-pc {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  padding: 0 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 5.875rem;
+  position: fixed;
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+main header .menu-bar-pc .menu-principal {
+  list-style: none;
+}
+
+main header .menu-bar-pc .menu-principal li .item-menu {
+  display: inline-block;
+  position: relative;
+}
+
+main header .menu-bar-pc .menu-principal li .item-menu:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #BDDB4F;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+main header .menu-bar-pc .menu-principal li .item-menu:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+main header .menu-bar-pc .menu-principal a {
+  padding: 0 0.5625rem;
+  text-decoration: none;
+  color: #872FA8;
+}
+
+main header .menu-bar-pc .top-redes a {
+  padding: 0 0.5625rem;
+  text-decoration: none;
+}
+
+main header .menu-bar-pc .top-redes a i {
+  color: #121212;
+  font-size: 1.65rem;
+}
+
+main header .menu-bar-movil {
+  background: #F8F9F7;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding: 0 2.25rem;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 5.875rem;
+  border-bottom: 1px solid #F8F9F7;
+}
+
+main header .burger-menu {
+  cursor: pointer;
+  font-size: 2.1875rem;
+}
+
+main header .slideMenu {
+  position: fixed;
+  top: 5.875rem;
+  left: -80%;
+  background: #F8F9F7;
+  text-align: center;
+  padding: 1.25rem 2.25rem;
+  width: 80%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  height: 100%;
+}
+
+main header .slideMenu.active {
+  left: 0;
+}
+
+main header .slideMenu .top-redes {
+  margin-bottom: 0.625rem;
+}
+
+main header .slideMenu .top-redes a {
+  padding: 0 0.5625rem;
+  text-decoration: none;
+  color: #121212;
+}
+
+main header .slideMenu .menu-principal a {
+  text-decoration: none;
+  display: block;
+  padding: 0.625rem 0;
+  border-top: 1px solid #d1d1d1;
+  color: #872FA8;
+}
+
+main .portada {
+  background: #BDDB4F;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-image: url(../img/naturea-portada-kit.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+main .portada .texto-portada {
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  -webkit-transform: translate(0, -40%);
+          transform: translate(0, -40%);
+  width: 40%;
+}
+
+main .portada .texto-portada .sub-title {
+  color: #121212;
+}
+
+main .portada .texto-portada h1 {
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  main .texto-portada {
+    width: 100% !important;
+    text-align: center;
+    left: 0 !important;
+    margin: 0 auto;
+  }
+  main header .menu-bar-pc {
+    display: none;
+  }
+  main header .menu-bar-movil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main .contadores_principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .contadores_principal .contador {
+  text-align: center;
+}
+
+main .contadores_principal .contador .contador_cantidad {
+  font-weight: 600;
+  color: #872FA8;
+}
+
+main .contadores_principal .contador h4 {
+  color: #121212;
+}
+
+main .why-natureakits .card .card-img img {
+  width: auto;
+  height: 100px;
+}
+
+main .back-flower {
+  height: 380px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/aceites-esenciales.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .back-flower .title-kits h2 {
+  font-weight: 400;
+  color: #872FA8;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.ocultar {
+  opacity: 0;
+}
+
+.animar {
+  -webkit-animation: aparecer 1.3s;
+          animation: aparecer 1.3s;
+}
+
+.formulario {
+  background-image: url(../img/fondoNaturea.png);
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+
+.formulario-contacto ::before,
+.formulario-contacto ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.formulario-contacto .formulario {
+  -webkit-animation-name: moverIzquierda;
+          animation-name: moverIzquierda;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+}
+
+.formulario-contacto h1 {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 600;
+  color: #549537;
+}
+
+.formulario-contacto form {
+  background: #fff;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+.formulario-contacto .form {
+  width: 100%;
+  margin: auto;
+}
+
+.formulario-contacto form .grupo {
+  position: relative;
+  margin: 45px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  background: rgba(84, 149, 55, 0.2);
+  border-radius: 5px;
+  color: #549537;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid var(--colorTextos);
+  resize: none;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: 0;
+  color: #549537;
+}
+
+.formulario-contacto input:focus ~ label,
+.formulario-contacto input:valid ~ label,
+.formulario-contacto textarea:focus ~ label,
+.formulario-contacto textarea:valid ~ label {
+  position: absolute;
+  top: -18px;
+  font-size: 12px;
+  color: #549537;
+}
+
+.formulario-contacto label {
+  color: var(--colorTextos);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+  pointer-events: none;
+}
+
+.formulario-contacto input:focus ~ .barra::before,
+.formulario-contacto textarea:focus ~ .barra::before {
+  width: 100%;
+}
+
+.formulario-contacto .barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.formulario-contacto .barra::before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#549537), to(#123800));
+  background: linear-gradient(to right, #549537, #123800);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  left: 0;
+}
+
+.formulario-contacto button {
+  background: #549537;
+  background: -webkit-gradient(linear, left top, right top, from(#549537), to(#123800));
+  background: linear-gradient(to right, #549537, #123800);
+  display: block;
+  width: 100px;
+  height: 40px;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.prov_top {
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.prov_top:hover {
+  margin-top: -10px;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+form .formulario-card {
+  padding: 20px;
+  height: 100%;
+  border: 1px solid #bababa;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+form .formulario-card .btn-group-lg > .btn,
+form .formulario-card .btn-lg {
+  width: 100%;
+  border: 0;
+}
+
+@media all and (max-width: 920px) {
+  .productos .top-producto {
+    margin-top: -5rem !important;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .logo img {
+    display: none !important;
+  }
+  nav .barra-1 .cont-us .sesion-registro {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 450px) {
+  nav .barra-2 .sub-menu {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  nav .barra-2 .sub-menu li:nth-child(1) {
+    margin-left: 60px;
+  }
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+.formulario__grupo-incorrecto {
+  color: #d10000 !important;
+}
+
+.img-hover:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: .2s ease-in;
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+}
+
+.img-hover {
+  -webkit-animation: card 2s infinite;
+          animation: card 2s infinite;
+}
+
+@-webkit-keyframes card {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  40% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes card {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  40% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.sticky .list-menu .list li .item-menu {
+  color: #F8F9F7 !important;
+  -webkit-transition: .6s ease-in;
+  transition: .6s ease-in;
+}
+
+.sticky .menu-bar-pc {
+  background-color: #BDDB4F;
+  margin-top: 0 !important;
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+.sticky .logo img {
+  width: 70%;
+}
+
+.sticky .burger-menu {
+  color: #F8F9F7 !important;
+  -webkit-transition: .6s ease-in;
+  transition: .6s ease-in;
+}
+/*# sourceMappingURL=style.css.map */
