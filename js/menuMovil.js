@@ -1,16 +1,3 @@
-// objeto con propiedads
-itemMenu = document.querySelectorAll('.item-menu');
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
-    itemMenu[1].addEventListener('click', (e) =>{
-        e.preventDefault( );
-    
-    
-        console.log('clic');
-    
-    })
-}
 
 
 
