@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="img/portada-link.jpg" />
 
-    <title>NatureaKits</title>
+    <title>NatureaKit</title>
     <meta property="og:url" content="https://natureakits.com/" />
-    <meta property="og:description" content="Brindamos alternativas para mejorar la salud, con oportunidades de crecimiento y emprendimiento en el negocio de uso y comercialización de aceites esenciales, tips, capacitación, etc. Aportamos una alternativa de bienestar natural basado en el uso de los aceites esenciales, proporcionando salud, paz y tranquilidad a través de una vida más sana." />
+    <meta property="og:description"
+        content="Brindamos alternativas para mejorar la salud, con oportunidades de crecimiento y emprendimiento en el negocio de uso y comercialización de aceites esenciales, tips, capacitación, etc. Aportamos una alternativa de bienestar natural basado en el uso de los aceites esenciales, proporcionando salud, paz y tranquilidad a través de una vida más sana." />
 
     <meta name="description"
         content="Brindamos alternativas para mejorar la salud, con oportunidades de crecimiento y emprendimiento en el negocio de uso y comercialización de aceites esenciales, tips, capacitación, etc. Aportamos una alternativa de bienestar natural basado en el uso de los aceites esenciales, proporcionando salud, paz y tranquilidad a través de una vida más sana." />
 
-    <meta name="keywords" content="Naturea kits bienestar natural aceites esenciales salud tranquilidad  crecimiento negocio emprendimiento vida sana trnaquilidad oportunidades " />
+    <meta name="keywords"
+        content="Naturea kits bienestar natural aceites esenciales salud tranquilidad  crecimiento negocio emprendimiento vida sana trnaquilidad oportunidades " />
 
     <meta property="og:site_name" content="https://natureakits.com/" />
     <meta property="fb:admins" content="ID de Facebook " />
@@ -32,6 +34,11 @@
 
     <meta itemprop="image" content="img/portada-link.jpg">
 
+    <!-- tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+
     <!-- Nos sirve para guardar una cookie. Los datos guardados son clave/valor -->
     <meta http-equiv="cookie" content="clave=valor; expires=Wednesday, 03-02-22 11:25:59 GMT;" />
 
@@ -39,7 +46,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- TODO: IMAGEN DE PORTADA -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
@@ -99,17 +106,19 @@
             <div class="menu-bar-pc mt-4">
 
                 <a href="index.html">
-                    <img src="img/logo-naturea.png" alt="Naturēa" style="width: 150px;">
+                    <img src="img/logo.png" alt="Naturēa" style="width: 100px;">
                 </a>
 
                 <nav class="menu-principal">
                     <ul class="list-unstyled d-flex">
                         <li><a href="index.html" class="item-menu volver-arriba"> Inicio</a></li>
-                        <li><a href="#comparte" class="item-menu scroll-suave">Comparte</a></li>
-                        <li><a href="#about-us" class="item-menu scroll-suave">¿Qué incluye?</a></li>
+                        <li><a href="#comparte" class="item-menu scroll-suave ">Comparte</a></li>
+                        <li><a href="#includes" class="item-menu scroll-suave ">¿Qué incluye?</a></li>
+                        <li><a href="detalle-producto.html" class="item-menu">Kit para compartir</a></li>
+
                         <li><a href="informacion-pago.html" class="item-menu">Compra vía transferencia</a>
                         </li>
-                        <li><a href="#" class="text-muted">Amazon</a></li>
+                        <li><a href="#" class="text-muted text-decoration-line-through">Amazon</a></li>
                     </ul>
                 </nav>
 
@@ -130,7 +139,7 @@
 
             <div class="menu-bar-movil">
                 <a href="index.html">
-                    <img src="img/logo-naturea.png" alt="Naturēa" style="width: 150px;">
+                    <img src="img/logo.png" alt="Naturēa" style="width: 100px;">
                 </a>
 
                 <div class="burger-menu" id="burger_menu">
@@ -154,11 +163,13 @@
                     <nav class="menu-principal">
                         <ul class="list-unstyled">
                             <li><a href="index.html" class="item-menu volver-arriba"> Inicio</a></li>
-                            <li><a href="index.html#comparte" class="item-menu scroll-suave ">Comparte</a></li>
-                            <li><a href="index.html#about-us" class="item-menu scroll-suave ">¿Qué incluye?</a></li>
-                            <li><a href="informacion-pago.html" class="item-menu scroll-suave ">Compra vía
-                                    transferencia</a></li>
-                            <li><a href="#" class="item-menu ">Comprar</a></li>
+                            <li><a href="#comparte" class="item-menu scroll-suave ">Comparte</a></li>
+                            <li><a href="#about-us" class="item-menu scroll-suave ">¿Qué incluye?</a></li>
+                            <li><a href="detalle-producto.html" class="item-menu">Kit para compartir</a></li>
+
+                            <li><a href="informacion-pago.html" class="item-menu">Compra vía transferencia</a>
+                            </li>
+                            <!-- <li><a href="#" class="item-menu ">Comprar</a></li> -->
                             <li><a href="#" class="text-muted text-decoration-line-through">Amazon</a></li>
                             <li> <a href="#" class="text-decoration-none">Términos y condiciones</a></li>
                             <li> <a href="aviso-privacidad.html" class="text-decoration-none  ">Política de
@@ -178,15 +189,17 @@
                 <div class="row">
                     <div class="col-lg-6 col-12">
                         <div class="texto-portada p-2">
-                            <h1 class="display-5">Planes Naturēa</h1>
-                            <h6 class="sub-title" style="color: #488f00;"><b>Kit Para Compartir Aceites Esenciales</b>
+                            <!-- <h1 class="display-5 color-black">NaturēaKit</h1> -->
+                            <img src="img/logo.png" alt="" class="w-25">
+                            <h6 class="sub-title color-black" style="color: #488f00;"><b>Kit Para Compartir Aceites
+                                    Esenciales</b>
                             </h6>
 
                             <p class="mt-3">
                                 Estamos brindando increíbles promociones, obtén un <br /> descuento en otros servicios
                                 que ofrecemos</p>
                             <div class="contain-btn">
-                                <a href="registro.php" class="btn-gral" target="_blank">Regístrate ahora</a>
+                                <a href="registro.php" class="btn btn-info" target="_blank">Regístrate ahora</a>
                             </div>
                         </div>
                     </div>
@@ -194,64 +207,17 @@
             </div>
         </section>
 
-        <section class="contadores_principal">
 
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 d-flex flex-wrap py-5">
-
-                        <div class="contador ocultar col-12 col-lg-3 my-5">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <div>
-                                    <span class="display-5" style="font-weight: 600; color: #872FA8;">+</span>
-                                </div>
-                                <div class="contador_cantidad display-5" data-cantidad-total="4500">
-                                    0
-                                </div>
-                            </div>
-                            <h4>Clientes suscritos</h4>
-                        </div>
-                        <div class="contador ocultar col-12 col-lg-3 my-5 text-center">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <div>
-                                    <span class="display-5" style="font-weight: 600; color: #872FA8;">+</span>
-                                </div>
-                                <div class="contador_cantidad display-5" data-cantidad-total="3500">
-                                    0
-                                </div>
-                            </div>
-                            <h4>Pedidos</h4>
-                        </div>
-                        <div class="contador ocultar col-12 col-lg-3 my-5">
-                            <div class="contador_cantidad display-5" data-cantidad-total="30">
-                                0
-                            </div>
-                            <h4>frascos de muestra</h4>
-                        </div>
-                        <div class="contador ocultar col-12 col-lg-3 my-5">
-                            <div class="contador_cantidad display-5" data-cantidad-total="30">
-                                0
-                            </div>
-                            <h4>30 tarjetitas con beneficios</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-        </section>
         <section class="why-natureakits" id="comparte">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 my-5">
-                        <h2 class="my-3 display-3 text-center">
+                        <h2 class="fw-bold my-3 text-center color-black">
                             Kit Para Compartir
                         </h2>
-                        <h2 class="text-center">Comparte los aceites esenciales y has crecer tu bienestar</h2>
-                        <div class="text-center mt-5 text-center" style="margin: 0 auto; width: 80%;">
+                        <h4 class="text-center fw-bold">Comparte los aceites esenciales y has crecer tu bienestar</h4>
+                        <div class="text-center mt-4 text-center" style="margin: 0 auto; width: 80%;">
                             <p style="text-align: center;">Este kit lo diseñamos y lo manufacturamos nosotros, así que
                                 cuidamos cada detalle,
                                 el material es de buenísima calidad, es durable, resistente y lo más importante, tiene
@@ -259,49 +225,70 @@
                         </div>
                         <div class="icons mt-5">
                             <div class="col-lg-12 d-flex flex-wrap justify-content-center">
-                                <div class="col-lg-4 col-12">
+                                <div class="col-lg-3 col-12">
                                     <div class="card border-n text-center">
-                                        <div class="card-img p-4 contador ocultar">
-                                            <i class="fas fa-suitcase-rolling"
-                                                style="font-size: 5rem; color: #6ad300;"></i>
+                                        <div class="bg-icon d-flex justify-content-center align-items-center rounded-circle card-img p-4 contador ocultar"
+                                            style="width: 150px; height: 150px; margin: 0 auto;">
+                                            <img src="img/producto-kit.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <div class="card-title">
-                                                <h2>Estuche</h2>
+                                                <h4 class="fw-bold">Estuche grande</h4>
                                             </div>
-                                            <p>1 estuche con 30 frascos de muestra</p>
+                                            <!-- <p>1 estuche con 30 frascos de muestra</p> -->
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="col-lg-4  col-12">
+                                <div class="col-lg-3  col-12">
                                     <div class="card border-n text-center">
-                                        <div class="card-img p-4 contador ocultar">
-                                            <i class="fas fa-file-alt" style="font-size: 5rem; color: #6ad300;"></i>
+                                        <div class="bg-icon d-flex justify-content-center align-items-center rounded-circle card-img p-4 contador ocultar"
+                                            style="width: 150px; height: 150px; margin: 0 auto;">
+                                            <img src="img/icono-kit.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <div class="card-title">
-                                                <h2>Tarjetas</h2>
+                                                <h4 class="fw-bold">2 termos de vidrio</h4>
                                             </div>
-                                            <p>30 tarjetas con beneficios</p>
+                                            <!-- <p>30 tarjetas con beneficios</p> -->
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="col-lg-4  col-12">
+
+                                <div class="col-lg-3  col-12">
                                     <div class="card border-n text-center">
-                                        <div class="card-img p-4 contador ocultar">
-                                            <i class="fas fa-shopping-bag" style="font-size: 5rem; color: #6ad300;"></i>
+                                        <div class="bg-icon d-flex justify-content-center align-items-center rounded-circle card-img p-4 contador ocultar"
+                                            style="width: 150px; height: 150px; margin: 0 auto;">
+
                                         </div>
                                         <div class="card-body">
                                             <div class="card-title">
-                                                <h2>Bolsa</h2>
+                                                <h4 class="fw-bold">Bolsa para tu kit</h4>
                                             </div>
-                                            <p>1 bolsa diseñada para tu kit</p>
+                                            <!-- <p>30 tarjetas con beneficios</p> -->
                                         </div>
 
                                     </div>
                                 </div>
+                                <div class="col-lg-3  col-12">
+                                    <div class="card border-n text-center">
+                                        <div class="bg-icon d-flex justify-content-center align-items-center rounded-circle card-img p-4 contador ocultar"
+                                            style="width: 150px; height: 150px; margin: 0 auto;">
+                                            <img src="img/icono-tips.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h4 class="fw-bold">Tips esenciales</h4>
+                                            </div>
+                                            <!-- <p>30 tarjetas con beneficios</p> -->
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
                             </div>
                         </div>
                     </div>
@@ -309,83 +296,66 @@
             </div>
         </section>
 
-        <section id="about-us">
+        <section>
+            <div class="d-flex  justify-content-center">
+                <hr class="w-75">
+            </div>
+        </section>
+
+        <section id="includes">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 d-flex flex-wrap align-items-center">
-                        <div class="col-lg-6 col-12 mb-5">
 
-                            <h2 class="display-5 ">Qué incluye el kit para compartir</h2>
-                            <p class="my-3">
-                                <ul style="list-style: none;">
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i> 1 estuche
-                                        grande para 64 frasquitos de muestra (de 2ml)</li>
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i> 1 estuche
-                                        chico de llavero para 11 frasquitos de muestra (de 2ml)</li>
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i> 2 termos de
-                                        vidrio para tomar aceites esenciales - 4 hermosos colores pastel disponibles
-                                    </li>
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i> 30 tarjetitas
-                                        circulares con beneficios de los aceites (10 de lavanda, 10 de limón y 10 de
-                                        menta)</li>
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i> 30 frasquitos
-                                        de muestra vacíos (de 2 ml)</li>
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i> 1 bolsa
-                                        diseñada para llevar tu kit</li>
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i> 1 tarjetón
-                                        (tips esenciales para compartir aceites)</li>
-
-                                </ul>
-                            </p>
-                        </div>
                         <div class="col-lg-6 col-12 text-center " style="opacity: .6;">
                             <img src="img/caja-oils.png" alt="" class="contador ocultar w-50">
                         </div>
+
+                        <div class="col-lg-6 col-12 my-5">
+
+                            <h2 class="fw-bold">Qué incluye el kit para compartir</h2>
+                            <p class="my-3">
+                                <h6 class="fw-bold color-black my-4">contenido:</h6>
+                                <ul class="m-0 ps-3">
+                                    <li>
+                                        1 estuche grande para 30 frasquitos de muestra (de 2ml)
+                                    </li>
+                                    <li>
+                                        1 estuche chico de llavero para 11 frasquitos de muestra (de 2ml)
+                                    </li>
+                                    <li>
+                                        2 termos de vidrio para tomar aceites esenciales - 4 hermosos colores pastel
+                                        disponibles
+                                    </li>
+                                    <li>
+                                        30 tarjetitas circulares con beneficios de los aceites (10 de lavanda, 10 de
+                                        limón y 10 de menta)
+                                    </li>
+                                    <li>
+                                        30 frasquitos de muestra vacíos (de 2 ml)
+                                    </li>
+                                    <li>
+                                        1 bolsa diseñada para llevar tu kit
+                                    </li>
+                                    <li>
+                                        1 tarjetón (tips esenciales para compartir aceites)
+                                    </li>
+
+                                </ul>
+
+                                <a href="detalle-producto.html">
+                                    <button class="btn btn-info mt-4 rounded-3 ">Ver kit completo</button>
+                                </a>
+                            </p>
+                        </div>
                     </div>
+
                 </div>
 
 
             </div>
 
         </section>
-
-        <!-- <section id="regalos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 d-flex flex-wrap align-items-center">
-                        <div class="col-lg-6 col-12 d-flex flex-wrap align-items-center justify-content-center">
-                            <img src="img/collar-gratis.jpg" alt="" class="contador ocultar">
-                        </div>
-                        <div class="col-lg-6 col-12 mb-5">
-
-                            <h2 class="display-5 mb-5">Y 4 regalos gratis con tu kit por la promoción <span
-                                    style="font-size: 18px;">(hasta diciembre 31)</span></h2>
-                            <p class="my-3">
-
-                                <ul style="list-style: none;">
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i>
-                                        1 collar difusor para aceites esenciales (diseño sorpresa)
-                                    </li>
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i>
-                                        5 etapas de sprays para aceites esenciales
-                                    </li>
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i>
-                                        3 roll-ons de colores de edición limitada (10 ml)
-                                    </li>
-                                    <li> <i class="fas fa-check-square me-3" style="color: #872FA8;"></i>
-                                        1 brazalete de piedras volcánicas de edición limitada (difusor)
-                                    </li>
-                                </ul>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </section> -->
 
 
 
@@ -394,23 +364,58 @@
                 <div class="row">
                     <div class="col-lg-12 text-center contain-title">
                         <div class="title-kits">
-                            <h2 class="display-5 text-center">Únete y conoce mas beneficios</h2>
+                            <h2 class="color-black text-center fw-bold">Únete y conoce mas beneficios</h2>
                         </div>
-                        <div class="contain-btn-kits">
-                            <a href="registro.php" class="btn-kits m-5">Regístrate ahora</a>
-                        </div>
+                        <a href="registro.php" class="btn-kits m-3">
+                            <button class="btn btn-lg btn-info-dark">
+                                Regístrate ahora
+
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <section>
-
-        </section>
-
-
     </main>
+
+    <footer class="pt-5 container">
+        <div class="row">
+            <div class="col-lg-4 col-12  my-3">
+                <img src="img/logo.png" alt="" class="w-25">
+                <h6 class="pe-4 pt-4">Kit Para Compartir Aceites Esenciales</h6>
+            </div>
+
+            <div class="col-12 col-lg-2 my-3">
+                <h5>Links</h5>
+                <ul class="nav flex-column">
+                    <li><a href="index.html" class="item-menu volver-arriba"> Inicio</a></li>
+                    <li><a href="#comparte" class="item-menu scroll-suave">Comparte</a></li>
+                    <li><a href="#about-us" class="item-menu scroll-suave">¿Qué incluye?</a></li>
+                    <li><a href="informacion-pago.html" class="item-menu">Compra vía transferencia</a>
+                    </li>
+                    <li><a href="#" class="text-muted">Amazon</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-4  my-3">
+                <form>
+                    <h5>Suscríbete</h5>
+                    <p>Recibe las ultimas ofertas y promociones</p>
+                    <div class="d-flex w-100 gap-2">
+                        <!-- <label for="newsletter1" class="visually-hidden">Correo electrónico</label> -->
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
+                        <button class="btn btn-primary" type="button">Suscríbete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between pt-3 border-top">
+            <p>© 2022 Kit Para Compartir Aceites Esenciales</p>
+        </div>
+    </footer>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -420,13 +425,13 @@
     <script src="js/runners.js"></script>
     <script src="js/menuMovil.js"></script>
     <script src="js/scroll.js"></script>
-    
-<script type="text/javascript">
-    window.addEventListener('scroll', function () {
-        let header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 0);
-    })
-</script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+    </script>
 
 
 </body>

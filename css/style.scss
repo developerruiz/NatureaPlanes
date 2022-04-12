@@ -1,8 +1,14 @@
-$color-morado: #872FA8;
-$color-verde: #BDDB4F;
+$color-morado: #a2a2d1;
+$color-verde: #a2a2d1;
 $color-blanco: #F8F9F7;
 $color-negro: #121212;
 
+$color-icon: #b2d5dc;
+
+
+// #499eb2
+// #b2d5dc
+// #a2a2d1
 
 * {
     left: 0;
@@ -10,7 +16,12 @@ $color-negro: #121212;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+i {
+    color: #121212 !important;
 }
 
 h1,
@@ -20,6 +31,25 @@ h4,
 h5,
 h6 {
     color: $color-morado;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.bg-icon {
+    background: $color-icon;
+}
+
+.btn-info,
+.btn {
+    background: $color-verde !important;
+}
+
+.btn-info-dark {
+    background: #5b5b81 !important;
+    color: $color-blanco !important;
 }
 
 .color-black {
@@ -33,7 +63,8 @@ h6 {
 .color-green {
     color: $color-verde !important;
 }
-.bg-green{
+
+.bg-green {
     background: $color-verde !important;
 
 }
@@ -133,6 +164,24 @@ img {
     }
 }
 
+@media (max-width:1015px) {
+
+    header {
+        .menu-bar-pc {
+            display: none !important;
+        }
+
+        .menu-bar-movil {
+            display: flex !important;
+        }
+
+        .bar-header {
+            display: none !important;
+        }
+    }
+
+}
+
 .up {
     position: fixed;
     left: 92%;
@@ -175,6 +224,8 @@ main {
                     .item-menu {
                         display: inline-block;
                         position: relative;
+                        color: #121212;
+                        font-weight: bold;
                     }
 
                     .item-menu:after {
@@ -318,6 +369,20 @@ main {
 
     }
 
+    .portada-detalle {
+
+        width: 100%;
+        height: 800px;
+
+        z-index: 1;
+        background-image: url(../img/fondo.png);
+        // background: #000;
+        background-position: right top;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
     @media (max-width:500px) {
         .texto-portada {
             width: 100% !important;
@@ -326,15 +391,6 @@ main {
             margin: 0 auto;
         }
 
-        header {
-            .menu-bar-pc {
-                display: none;
-            }
-
-            .menu-bar-movil {
-                display: flex;
-            }
-        }
     }
 
     .contadores_principal {
@@ -355,22 +411,6 @@ main {
             }
         }
     }
-
-    // .runners {
-    //     background: $color-blanco;
-    //     height: auto;
-    //     padding: 30px 0;
-    //     align-items: center;
-    //     display: flex;
-
-    //     div {
-    //         p {
-    //             font-weight: 700;
-    //             color: $color-negro
-    //         }
-    //     }
-    // }
-
 
     .why-natureakits {
 
@@ -395,7 +435,7 @@ main {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto;
 
         .title-kits {
             h2 {
@@ -404,6 +444,16 @@ main {
             }
         }
     }
+
+    .detalles-prod {
+        display: flex !important;
+        flex-direction: row !important;
+        // background: #000 !important;
+        // flex-direction: column;
+        // flex-direction: row-reverse !important;
+    }
+
+    
 
 }
 
@@ -658,26 +708,58 @@ form .formulario-card .btn-lg {
 
 
 .sticky {
-//   height: 70px;
+    //   height: 70px;
 
-  .list-menu .list li .item-menu {
-    color: $color-blanco !important;
-    transition: .6s ease-in;
-  }
-.menu-bar-pc{
-    background-color:$color-verde;
-    // top: 0!important;
-    margin-top: 0!important;
-    transition: .3s ease-in;
-    -webkit-transition: .3s ease-in;
-    -o-transition: .3s ease-in;
+    .list-menu .list li .item-menu {
+        color: $color-blanco !important;
+        transition: .6s ease-in;
+    }
+
+    .menu-bar-pc {
+        background-color: $color-verde;
+        // top: 0!important;
+        margin-top: 0 !important;
+        transition: .3s ease-in;
+        -webkit-transition: .3s ease-in;
+        -o-transition: .3s ease-in;
+        // height: 10px!important;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .burger-menu {
+        color: $color-blanco !important;
+        transition: .6s ease-in;
+    }
 }
-  .logo img {
-    width: 70%;
-  }
 
-  .burger-menu {
-    color: $color-blanco !important;
-    transition: .6s ease-in;
-  }
+.color {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+}
+
+.color:nth-child(1) {
+    background: #111;
+}
+
+.color:nth-child(2) {
+    background: #111;
+}
+
+.color:nth-child(3) {
+    background: #111;
+}
+
+@media(max-width:990px) {
+    main .detalles-prod:nth-child(2n) {
+        flex-direction: column-reverse!important;
+        // flex-direction: column-reverse;
+        // background: red !important;
+     
+    }
+
 }
