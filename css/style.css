@@ -423,6 +423,16 @@ main .back-flower .title-kits h2 {
   color: #a2a2d1;
 }
 
+main .detalles-prod {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
 @-webkit-keyframes aparecer {
   0% {
     opacity: 0;
@@ -750,5 +760,14 @@ form .formulario-card .btn-lg {
 
 .color:nth-child(3) {
   background: #111;
+}
+
+@media (max-width: 990px) {
+  main .detalles-prod:nth-child(2n) {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

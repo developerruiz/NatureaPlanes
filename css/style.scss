@@ -47,9 +47,9 @@ a {
     background: $color-verde !important;
 }
 
-.btn-info-dark{
-    background: #5b5b81!important;
-    color: $color-blanco!important;
+.btn-info-dark {
+    background: #5b5b81 !important;
+    color: $color-blanco !important;
 }
 
 .color-black {
@@ -174,7 +174,8 @@ img {
         .menu-bar-movil {
             display: flex !important;
         }
-        .bar-header{
+
+        .bar-header {
             display: none !important;
         }
     }
@@ -369,7 +370,7 @@ main {
     }
 
     .portada-detalle {
-  
+
         width: 100%;
         height: 800px;
 
@@ -389,7 +390,6 @@ main {
             left: 0 !important;
             margin: 0 auto;
         }
-
 
     }
 
@@ -444,6 +444,16 @@ main {
             }
         }
     }
+
+    .detalles-prod {
+        display: flex !important;
+        flex-direction: row !important;
+        // background: #000 !important;
+        // flex-direction: column;
+        // flex-direction: row-reverse !important;
+    }
+
+    
 
 }
 
@@ -724,18 +734,32 @@ form .formulario-card .btn-lg {
         transition: .6s ease-in;
     }
 }
-.color{
+
+.color {
     width: 40px;
     height: 40px;
-    margin: 0 10px 0 0; 
+    margin: 0 10px 0 0;
     border-radius: 50%;
 }
-.color:nth-child(1){
+
+.color:nth-child(1) {
     background: #111;
 }
-.color:nth-child(2){
+
+.color:nth-child(2) {
     background: #111;
 }
-.color:nth-child(3){
+
+.color:nth-child(3) {
     background: #111;
+}
+
+@media(max-width:990px) {
+    main .detalles-prod:nth-child(2n) {
+        flex-direction: column-reverse!important;
+        // flex-direction: column-reverse;
+        // background: red !important;
+     
+    }
+
 }
